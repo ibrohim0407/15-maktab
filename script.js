@@ -1,6 +1,11 @@
 function parolmatch(usernames,password,user,pass){
-  let ans=false;
-  
+  let res=false;
+  for(let i=0;i<usernames.length;i++){
+    if(usernames[i] === user && passwords[i] === pass){
+      res=true;
+    }
+  }  
+  return res;
 }
 document.getElementById('logintap').onclick = function(){
   let usernames; 
