@@ -27,7 +27,7 @@ document.getElementById('logintap').onclick = function(){
         .catch(error => console.error('Error fetching the file:', error));
   user=document.getElementById("username").value;
   pass=document.getElementById("password").value;
-  if(parolmatch(usernames,passwords,user,pass)){
+  if(parolmatch(usernames,passwords,user,pass) === true){
     console.log("true password");
   }
   else{
