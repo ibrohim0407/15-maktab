@@ -41,13 +41,14 @@
     
 </main>
 <script>
-    console.log("salom");
-    fetch('Screenshot%202024-11-13%209.44.08%20PM.jpg').then(response => {
-        console.log(response);
-        return response.blob;
-    }).then(response => {
-        console.log(response);
-    });
+    fetch('salom.txt')
+        .then(response => response.text())
+        .then(data => {
+            // Split the content by lines into an array
+            const lines = data.split('\n');
+            console.log(lines); // Array of lines
+        })
+        .catch(error => console.error('Error fetching the file:', error));
 
 
 </script>
