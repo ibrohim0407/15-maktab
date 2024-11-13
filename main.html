@@ -44,7 +44,9 @@
     console.log("salom");
     fetch('Screenshot%202024-11-13%209.44.08%20PM.jpg').then(response => {
         console.log(response);
-
+        return response.blob;
+    }).then(response => {
+        console.log(response);
     });
 
 
