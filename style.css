@@ -1,21 +1,29 @@
-nav {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 10px;
+.login {
     text-align: center;
-    z-index: 1000;
+    border-style:unset;
+    border-style: double;
+    border-radius: 5px;
+    width: max-content;
 }
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px 30px 30px 30px;
+
+    background-color: rgb(196, 203, 209);
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+button{
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    
 }
-nav ul li a {
-    color: white;
-    text-decoration: none;
+h4{
+    color: rgb(121, 123, 124);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
