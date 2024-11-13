@@ -40,18 +40,7 @@
     </div>
     
 </main>
-<script>
-    fetch('salom.txt')
-        .then(response => response.text())
-        .then(data => {
-            // Split the content by lines into an array
-            const lines = data.split('\n');
-            console.log(lines); // Array of lines
-        })
-        .catch(error => console.error('Error fetching the file:', error));
-
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
