@@ -1,6 +1,10 @@
 function parolmatch(usernames, passwords, user, pass) {
   let res = false;
-  for (let i = 0; i < usernames.length; i++) {
+  let s=0;
+  for(let x of usernames){
+    s=s+1;
+  }
+  for (let i = 0; i < s; i++) {
     if (usernames[i] === user && passwords[i] === pass) {
       res = true;
       break;  // Optional: To stop once a match is found
