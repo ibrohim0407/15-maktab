@@ -13,8 +13,8 @@ document.getElementById('logintap').onclick = async function() {
     // Split the data into lines (assuming each line is a username/password pair)
     let usernames = usernamesData.split('\n').map(line => line.trim());
     let passwords = passwordsData.split('\n').map(line => line.trim());
-
-    // Check if the username and password match any line
+    console.log(usernames);
+    console.log(passwords);
     let isValid = false;
     for (let i = 0; i < usernames.length; i++) {
       if (usernames[i] === user && passwords[i] === pass) {
@@ -23,7 +23,6 @@ document.getElementById('logintap').onclick = async function() {
       }
     }
 
-    // Display result in the console
     if (isValid) {
       console.log("true password");
     } else {
