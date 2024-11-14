@@ -24,9 +24,9 @@ document.getElementById('logintap').onclick = async function() {
     }
 
     if (isValid) {
-      console.log("true password");
+      document.getElementById("h1tagi").textContent="true password";
     } else {
-      console.log("bad password");
+      document.getElementById("h1tagi").textContent="bad password";
     }
   } catch (error) {
     console.error('Error fetching the files:', error);
